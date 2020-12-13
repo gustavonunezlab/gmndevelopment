@@ -1,0 +1,6 @@
+button {
+    color: black;
+    border: 2px solid rgb(9, 9, 9);
+    border-radius: 8px;
+    background-color: rgba(42, 220, 220, 0.659);
+}

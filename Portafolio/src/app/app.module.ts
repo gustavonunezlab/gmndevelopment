@@ -4,13 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { PersonalDataComponent } from './personal-data/personal-data.component';
+import { MyProjectsComponent } from './my-projects/my-projects.component';
+import { AcademicHistoryComponent } from './academic-history/academic-history.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { DevelopmentToolsComponent } from './development-tools/development-tools.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PersonalDataComponent
+    MyProjectsComponent,
+    AcademicHistoryComponent,
+    ContactComponent,
+    AboutMeComponent,
+    DevelopmentToolsComponent
   ],
   imports: [
     BrowserModule,

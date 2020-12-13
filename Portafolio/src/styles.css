@@ -1,10 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-#initBar {
-    background-color: rgba(143, 141, 20, 0.3);
-}
-
 body {
-    background-image: url("./app/images/85333.jpg");
+    background-image: url("./assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
