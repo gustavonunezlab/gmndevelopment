@@ -4,3 +4,7 @@ button {
     border-radius: 8px;
     background-color: rgb(152, 175, 248);
 }
+
+label {
+    color: blanchedalmond;
+}

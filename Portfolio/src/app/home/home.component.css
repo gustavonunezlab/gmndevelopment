@@ -44,4 +44,10 @@ button {
     block-size: 90px;
 }
 
+.footer > a {
+    border-radius: 4px;
+    background-color:rgba(97, 97, 97, 0.638);
+    color: rgb(218, 198, 16);
+}
+
 

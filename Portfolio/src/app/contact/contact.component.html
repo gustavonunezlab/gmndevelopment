@@ -1,4 +1,52 @@
-<p>contact works!</p>
+<div class="container">
+    <!-- Acá colocamos nuestro formulario HTML -->
+    <div class="starter-template">
 
-<button (click)="goBack()" class="btn"><strong>Atrás</strong>
-</button>
+        <div class="row">
+
+            <div class="col-md-12 mt-5">
+
+                <form [formGroup]="contacto" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>Nombres y Apellidos</label>
+                        <input type="text" formControlName="nya" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.nya.errors }" />
+                        <div *ngIf="submitted && f.nya.errors" class="invalid-feedback">
+                            <div *ngIf="f.nya.errors.required">Por favor, ingresa tus Nombres y Apellidos</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="text" formControlName="email" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">El e-mail es obligatorio</div>
+                            <div *ngIf="f.email.errors.email">Por favor, ingresa tu Email</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Asunto</label>
+                        <input type="text" formControlName="asunto" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.asunto.errors }" />
+                        <div *ngIf="submitted && f.asunto.errors" class="invalid-feedback">
+                            <div *ngIf="f.asunto.errors.required">Por favor, ingresa el Asunto</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" formControlName="mensaje" rows="5"
+                            [ngClass]="{ 'is-invalid': submitted && f.mensaje.errors }"></textarea>
+                        <div *ngIf="submitted && f.mensaje.errors" class="invalid-feedback">
+                            <div *ngIf="f.mensaje.errors.required">Por favor, ingresa el Mensaje ( 6 Caracteres mínimo )
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button (click)="goBack()" class="btn"><strong>Atrás</strong></button>
+    &nbsp;
+    <button class="btn" (click)="onSubmit()"><strong>Aceptar</strong></button>
+</div>
