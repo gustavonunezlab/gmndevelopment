@@ -13,8 +13,8 @@ export class ContactComponent implements OnInit {
   submitted = false;
 
   constructor(
-    private location: Location,
-    private formBuilder: FormBuilder,
+    private readonly location: Location,
+    private readonly formBuilder: FormBuilder,
 
   ) { }
 

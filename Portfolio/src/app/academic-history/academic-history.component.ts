@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { Asignatura } from '../models/asignatura';
 
 @Component({
   selector: 'app-academic-history',
@@ -8,8 +9,11 @@ import { Location } from '@angular/common';
 })
 export class AcademicHistoryComponent implements OnInit {
 
+  
   constructor(
-    private location: Location,
+    private readonly location: Location,
+    private asignaturas: Asignatura[]
+
   ) { }
 
   ngOnInit(): void {
